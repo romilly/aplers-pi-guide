@@ -33,11 +33,14 @@ You may also want to get a case. Some starter kits will include one.
 
 You'll need WiFi or a wired connection in order to install and update the Pi's software. 
 
-The Raspberry Pi has built-in WiFi which you can configure once the Pi has booted up. You can also use a wired ethernet connection in which case you will also need an ethernet cable. 
+The Raspberry Pi 3 has built-in WiFi which you can configure once the Pi has booted up.
+(If you're using an earlier model you can use wired ethernet or get a USB WEiFi dongle).
+If you decide to use a wired ethernet connection you will also need an ethernet cable. 
 
 Some starter kits include a keyboard and mouse; some don't. Check carefully and decide which one to get. 
 
-The supplier I normally buy from is a UK company called [Pimoroni](https://shop.pimoroni.com/). If you're based outside the UK Pimoroni ship overseas but a local supplier may be faster and cheaper. 
+The supplier I normally buy from is a UK company called [Pimoroni](https://shop.pimoroni.com/).
+If you're based outside the UK Pimoroni ship overseas but a local supplier may be faster and cheaper. 
 
 Pimoroni sell a [starter kit for £85](https://shop.pimoroni.com/products/raspberry-pi-3-starter-kit)
 (including mouse and keyboard) and
