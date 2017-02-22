@@ -1,28 +1,20 @@
 
 
-#End
-
+## What next?
 
 
 ##Other resources
 
 
-
-###slack channel
-
-
-
-###email list
+### Use the slack channel
 
 
 
-##I hope you'll have as much fun with the Pi as I do.
-
+### Join the email list
 
 
 ##Physical computing
 
 
-
-###Course
+I hope you'll have as much fun with the Pi as I do!
 
