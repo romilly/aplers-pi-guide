@@ -72,8 +72,8 @@ if you have one lying around. Setup and installation are the same as for the Pi 
 The only sensible alternative to buying a Pi 3 is the Pi zero.
 
 It's much cheaper: £4 + Postage. If you're willing to hack around a bit you can even power it, and connect to it,
-using just a USB lead and a laptop or desktop computer. You'll need to use ssh to configure it, and then use VNC
-to access the Pi desktop. If those terms mean nothing to you this is probably not the option for you.
+using just a USB lead and a laptop or desktop computer. You'll need to use `ssh`to configure it, and then use `VNC`
+to access the Pi desktop. If those terms mean nothing this is probably not the option for you.
  
 There is a half-way house. You can get
 a [Raspberry Pi zero starter kit](https://shop.pimoroni.com/products/pi-zero-complete-starter-kit) for about £24 and you
