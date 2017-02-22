@@ -56,15 +56,34 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Introduction" POSITION="right" ID="ID_397673433" CREATED="1463654308349" MODIFIED="1487237569561">
-<node TEXT="The Raspberry Pi is cheap to buy, fun to explore, and a very practical platform for APL. If you know APL, this book will help you to get going with the Pi as quickly as posible." ID="ID_165494090" CREATED="1484301928167" MODIFIED="1484302256315"/>
+<node TEXT="The APLer&apos;s Quickstart Guide to the Raspberry Pi" POSITION="right" ID="ID_198048181" CREATED="1484298338022" MODIFIED="1484298556892">
+<node TEXT="Introduction" ID="ID_397673433" CREATED="1463654308349" MODIFIED="1487770310014"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The Raspberry Pi is cheap to buy, fun to explore, and a very practical platform for APL. If you know APL, this book will help you to get going with the Pi as quickly as possible.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      It covers what to buy, where to get it and how to set it up.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="Topics" POSITION="right" ID="ID_68788707" CREATED="1463654311204" MODIFIED="1463654314234">
-<node TEXT="Title" ID="ID_692804023" CREATED="1484298331526" MODIFIED="1484298337018">
-<node TEXT="The APLer&apos;s Quickstart Guide to the Raspberry Pi" ID="ID_198048181" CREATED="1484298338022" MODIFIED="1484298556892"/>
-<node TEXT="What to buy, where to get it, how to set it up" ID="ID_1898818106" CREATED="1484298407094" MODIFIED="1484301851273"/>
-</node>
-<node TEXT="executive summary :)" ID="ID_1078817923" CREATED="1487237177762" MODIFIED="1487237546601"><richcontent TYPE="NOTE">
+<node TEXT="The 5 minute summary" ID="ID_1078817923" CREATED="1487237177762" MODIFIED="1487770839589"><richcontent TYPE="NOTE">
 
 <html>
   <head>
@@ -78,22 +97,127 @@
       
     </p>
     <p>
-      If you're happy with that just do it :)
+      If you're happy with that just do what I suggest :)
     </p>
     <p>
       
     </p>
     <p>
-      Most APLers don't just blindly follow the herd - that's why they are APLers. If you want to know the assumptions behind this advice and the alternatives available, read the whole document. It's quite short.
+      Most APLers don't just blindly follow the herd - that's why they are APLers! If you want to know the assumptions behind my advice and the alternatives available, read the whole document.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      If you just want to get going, here's the 5-minute version:
+    </p>
+    <ol>
+      <li>
+        Buy a Raspberry Pi Starter Kit and make sure you have the other hardware you'll need
+      </li>
+      <li>
+        Connect the contents and boot it up
+      </li>
+      <li>
+        Install Dyalog APL
+      </li>
+    </ol>
+    <p>
+      
     </p>
   </body>
 </html>
+
 </richcontent>
-<node TEXT="Buy Pi 3 starter kit" ID="ID_127457421" CREATED="1487237195882" MODIFIED="1487237211718">
-<node TEXT="contents" ID="ID_1541578998" CREATED="1487756876718" MODIFIED="1487756880739"/>
+<node TEXT="Buy a Raspberry Pi 3 starter kit" ID="ID_127457421" CREATED="1487237195882" MODIFIED="1487772669209"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Raspberry Pi 3 starter kits are widely available in the UK, Europe and the USA.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Look for one which has the following components:
+    </p>
+    <ul>
+      <li>
+        Raspberry Pi model 3
+      </li>
+      <li>
+        5v 2.5A Power supply which you can plug into your mains supply
+      </li>
+      <li>
+        8Gb SD card with NOOBS or Raspbian Pixel pre-loaded
+      </li>
+    </ul>
+    <p>
+      You'll also need a USB mouse, a USB keyboard (the Dyalog APL keyboard works best but any Keyboard will do), a monitor or TV with HDMI support and an HDMI cable to connect it to the Pi.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      You may also want to get a case. Some starter kits will include one.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      You'll need WiFi or a wired connection in order to install and update the Pi's software.
+    </p>
+    <p>
+      The Raspberry Pi has built-in WiFi which you can configure once the Pi has booted up. You can also use a wired ethernet connection in which case you will also need an ethernet cable.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Some starter kits include a keyboard and mouse; some don't. Check carefully and decide which one to get.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The supplier I normally buy from is a UK company called Pimoroni. If you're based outside the UK Pimoroni ship overseas but a local supplier may be faster and cheaper.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Pimoroni sell a starter kit for &#163;85 (including mouse and keyboard) and an essentials kit (without mouse or keyboard) for &#163;55.
+    </p>
+    <p>
+      &#160;
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
-<node TEXT="Connect like this" ID="ID_107567104" CREATED="1487237225650" MODIFIED="1487237232883"/>
-<node TEXT="On first boot chose raspbian" ID="ID_1871729471" CREATED="1487237212682" MODIFIED="1487237223684"/>
+<node TEXT="Connect like this" ID="ID_107567104" CREATED="1487237225650" MODIFIED="1487772490062"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      It's important that you connect the components in the right order.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 <node TEXT="Install Dyalog following these instructions" ID="ID_746725502" CREATED="1487237242698" MODIFIED="1487237273380"/>
 </node>
 <node TEXT="How much will it cost to get started?" ID="ID_991331726" CREATED="1484549494671" MODIFIED="1487237584833">
@@ -129,7 +253,7 @@
 <node TEXT="Headless working" ID="ID_1851147570" CREATED="1484549180519" MODIFIED="1484549214731"/>
 </node>
 </node>
-<node TEXT="Using latest (PIXEL) version of the Rapberry Pi OS" ID="ID_1816516421" CREATED="1484327998144" MODIFIED="1484328019990"/>
+<node TEXT="Using latest (PIXEL) version of the Rapberry Pi OS" ID="ID_1816516421" CREATED="1484327998144" MODIFIED="1487770782939"/>
 <node TEXT="Existing monitor" ID="ID_1852618697" CREATED="1484549505551" MODIFIED="1484549510828"/>
 </node>
 <node TEXT="What to buy" ID="ID_876324595" CREATED="1484327358856" MODIFIED="1484327363469">
