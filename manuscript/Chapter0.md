@@ -1,6 +1,6 @@
 
 
-#The APLer's Quickstart Guide to the Raspberry Pi
+#The APLer's Guide to the Raspberry Pi
 
 
 
