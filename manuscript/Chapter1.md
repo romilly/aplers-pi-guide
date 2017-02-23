@@ -59,6 +59,11 @@ When you're done, come back here.
 
 [Dyalog installation on the Pi is covered here](http://packages.dyalog.com/).
 
+At the time of writing, these will tell you to install a beta version of RIDE 4.0.
+
+The documentation of RIDE 4.0 is currently incomplete, but most of the documentation for RIDE 3.0 applies.
+[You can read it here](http://docs.dyalog.com/15.0/RIDE%20User%20Guide.pdf). 
+
 Now skip on to the section 'What Next?' at the end of this document.
 
 # The alternatives
