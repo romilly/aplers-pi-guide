@@ -40,7 +40,8 @@ You'll need to register before you can post.
 
 ### Join the email list
 
-Dyalog have a mailing list which they will use to keep Pi users informed of new resources. You can [join it here]().
+Dyalog have a mailing list which they will use to keep Pi users informed of new resources.
+You can [join it at the bottom of this page](http://www.dyalog.com/dyalog/raspberry-pi.htm).
 
 ## Have fun!
 
