@@ -34,7 +34,7 @@ The guide covers what to buy, where to get it, how to set it up and how to insta
 ### What's not covered
 
 The guide assumes you are familiar with APL. It does not cover how to use Dyalog's wonderful RIDE (Remote IDE), as
-Dyalog already provide documentation on-line. I may do an introductory RIDE video if there is enough interest.
+Dyalog already provide documentation on-line.
 
 It does not cover Linux, though there is a link to some relevant learning resources at the end of the document.
 

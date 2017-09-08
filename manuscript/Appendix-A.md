@@ -1,0 +1,62 @@
+# Using a Pi without monitor, mouse or keyboard
+
+You can use a Raspberry Pi without having to use extra peripherals.
+
+The minimal configuration consists of a Pi model 1, 2 or 3 with a source of power.
+
+The power source is usually an appropriate mains adapter, but any 5v power source will do so long as it can supply
+enough current.
+
+The minimal configuration requires that the Pi already has working software installed.
+
+You can configure a headless Pi from scratch over a network using another computer, but the process is more complex
+and is harder to trouble-shoot.
+
+You'll find an overview of the process below, with links to more detailed information about each step.
+ 
+You will need
+* a Laptop or workstation (which can be an already-configured Raspberry Pi model 2 or 3) from which configure the
+target Pi *and*
+* a wired network connection for Pi models 1, 2 or 3) *or* 
+* a USB Type A to micro connection for a Pi zero or zero W.
+
+There are three main steps to follow, described below:
+1. You'll need to prepare an SD card for the Pi.
+1. You'll need to use a protocol called ```ssh``` to connect to the Pi and prepare it for step 3.
+1. You'll use a protocol called ```VNC``` to access the Pi's desktop on your laptop or workstation.
+
+After step 3 you can use your laptop or workstation for carry out further configuration of the Pi.
+In particular, you can install Dyalog APL on the Pi and use the RIDE to program and debug.
+
+## Headless configuration details
+
+### Preparing and using the SD card
+
+1. It's best to start with an SD card containing the latest Raspbian image. You'll find details about how to download the
+image and install it on an SD card [here](https://www.raspberrypi.org/downloads/raspbian/).
+**Do not** use it to boot the Pi before completing step 2 below!
+
+1. Re-insert the freshly prepared SD card into your card reader.
+Your operating system should mount the SD card and you should be able to see a partition labelled ```boot```.
+Create a file called ssh in the root of the ```boot``` partition. Its contents do not matter.
+If you're using Windows, make sure the file is called ssh *without any extension* as Windows is prone to add
+(and then hide) txt extensions when you create text files.
+The ssh file tells Raspbian to enable its ```ssh``` sever when the Pi starts up.
+
+1. Now insert the SD card into the target Pi and connect it to the power source.
+
+### Connecting to the Pi via ```ssh```
+
+1. You will need an ```ssh``` client on your laptop or workstation. Installation depends on the Operation System you're
+using. *On Linux* you'll need to install the ```openssh-client``` package if it is not already installed. *MacOS* should have
+```ssh``` support built-in to ```Terminal```. *Windows* users will need to install a suitable client: PuTTY
+(free software, widely used) is a good choice. You'll find installation instructions for PuTTY
+[here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+
+1. You will need to enable your laptop or workstation to find the target Pi on the network. By default the Pi will use
+DHCP to request a dynamic IP address from your network. You can sometimes find out
+the Pi's IP address by connecting to your router, but there is another approach. Once it is running the Pi will
+broadcast itself on the network as raspberrypi.local using Apple's ```bonjour``` protocol. Resolving that address
+requires suitable software on your Laptop or Workstation. On *Linux* ```avahi```
+should already be installed and running. MacOS should also resolve the address without additional software,
+as should Windows 10. If you're running an earlier version of Windows, you can install

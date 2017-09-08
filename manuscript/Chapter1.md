@@ -11,7 +11,7 @@ If you want to know the assumptions behind my advice and the alternatives availa
 
 If you just want to get going, here's the 5-minute version: 
 
-  1. Buy a Raspberry Pi Starter Kit and make sure you have the other hardware you'll need 
+  1. Buy a Raspberry Pi 3 Starter Kit and make sure you have the other hardware you'll need 
   2. Connect the contents and boot it up 
   3. Install Dyalog APL 
 
@@ -57,38 +57,39 @@ When you're done, come back here.
 
 ###Install Dyalog following these instructions
 
-[Dyalog installation on the Pi is covered here](http://packages.dyalog.com/).
+As mentioned above, you can run Dyalog APL on all models of the Raspberry Pi, and you can use Dyalog's Remote IDE
+(the RIDE) to connect, program and debug APL from another computer.
 
-At the time of writing, these will tell you to install a beta version of RIDE 4.0.
+If you've got a Raspberry Pi 2.0 or 3.0 you can also use the RIDE on your Pi.
 
-The documentation of RIDE 4.0 is currently incomplete, but most of the documentation for RIDE 3.0 applies.
-[You can read it here](http://docs.dyalog.com/15.0/RIDE%20User%20Guide.pdf). 
+[Dyalog/RIDE installation on the Pi is covered here](http://packages.dyalog.com/).
+
+The documentation for RIDE 4.0 is available [here](http://docs.dyalog.com/16.0/RIDE%20User%20Guide.pdf). 
 
 Now skip on to the section 'What Next?' at the end of this document.
 
 # The alternatives
 
+## Alternative models of the Pi
+
 You don't *have* to get a Raspberry Pi model 3.
 
-You can use a Raspberry Pi Model 1 or 2 but they are not much cheaper and are much less powerful. In particular, the
-Raspberry Pi model 3 has 4 cores and APL can use them all! They may still be a good solution
-if you have one lying around. Setup and installation are the same as for the Pi 3.
+You can use a Raspberry Pi zero, zero W, Model 1 or 2 but they are not much cheaper and are much less powerful.
 
-The only sensible alternative to buying a Pi 3 is the Pi zero.
+The Raspberry Pi model 3 has 4 cores and 1 Gb of RAM and APL can use them all! 
 
-It's much cheaper: £4 + Postage. If you're willing to hack around a bit you can even power it, and connect to it,
-using just a USB lead and a laptop or desktop computer. You'll need to use `ssh`to configure it, and then use `VNC`
-to access the Pi desktop. If those terms mean nothing this is probably not the option for you.
+You might consider earlier versions but remember that you won't be able to run the RIDE on a zero, zero W or Pi model 1.
+Apart from the RIDE, setup and installation are the same as for the Pi 3.
+
+## Headless running
+
+It's *possible* to run any model of Raspberry Pi without a keyboard, mouse or monitor. This is sometimes called a
+*headless* configuration.
+
+You can still program your Pi so long as you have a wired or wireless network connection.
+
+You can even configure a headless Pi from scratch so long as you have a wired connection and are willing to go through
+a more complex set-up process. There's more information on configuring and using a headless Pi in Appendix A.
+
  
-There is a half-way house. You can get
-a [Raspberry Pi zero starter kit](https://shop.pimoroni.com/products/pi-zero-complete-starter-kit) for about £24 and you
-will also want
-[a suitable USB hub](https://shop.pimoroni.com/products/three-port-usb-hub-with-ethernet-and-microb-connector).
-
-You'll still need a monitor, HDMI cable, mouse and keyboard. The total cost will be a little lower than getting a Pi 3
-and the zero is slower, has just one core and has much less memory.
-
-I would only recommend the zero if you are building a robot or an embedded application where space and power
-consumption are critical, in which case you probably don't need this guide :) 
-
 

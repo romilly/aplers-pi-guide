@@ -15,9 +15,9 @@ resources described [here](http://www.dyalog.com/dyalog/raspberry-pi.htm).
 ##Physical computing
 
 There's not enough space in this guide to cover the ways in which you can do Physical Computing from APL on the Pi
-(driving LEDs and motors, and sensing the real world). You can read some details on
-[Morten Kromberg's blog](http://www.dyalog.com/blog/),
-and I hope to publish a guide to the topic if there's enough demand.
+(driving LEDs and motors, and sensing the real world). You can read some details on 
+[Morten Kromberg's blog](http://www.dyalog.com/blog/), and I hope to publish a guide to the topic
+if there's enough demand.
 
 ##Other resources
 

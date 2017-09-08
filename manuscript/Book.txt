@@ -1,5 +1,6 @@
 Chapter0.md
 Chapter1.md
 Chapter2.md
-Chapter3.md
+Appendix-A.md
+Author.md
 LICENSE.md
