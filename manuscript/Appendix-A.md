@@ -53,10 +53,45 @@ using. *On Linux* you'll need to install the ```openssh-client``` package if it 
 (free software, widely used) is a good choice. You'll find installation instructions for PuTTY
 [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
-1. You will need to enable your laptop or workstation to find the target Pi on the network. By default the Pi will use
-DHCP to request a dynamic IP address from your network. You can sometimes find out
-the Pi's IP address by connecting to your router, but there is another approach. Once it is running the Pi will
-broadcast itself on the network as raspberrypi.local using Apple's ```bonjour``` protocol. Resolving that address
-requires suitable software on your Laptop or Workstation. On *Linux* ```avahi```
-should already be installed and running. MacOS should also resolve the address without additional software,
-as should Windows 10. If you're running an earlier version of Windows, you can install
+1. You will need to enable your laptop or workstation to find the target Pi on the network.
+
+    By default the Pi will use DHCP to request a dynamic IP address from your network which you will not know. You can sometimes find out
+the Pi's IP address by connecting to your router, but there is another approach.
+    
+    Once the Pi is running it will broadcast itself on the network as raspberrypi.local using Apple's
+```bonjour``` protocol. Resolving that hostname to an IP address
+requires suitable software on your Laptop or Workstation.
+
+    1. On *Linux* ```avahi``` should already be installed and running.
+    1. *MacOS* should also resolve the address without additional software,
+as should *Windows 10*.
+    1. If you're running an *earlier version of Windows*, you can install ```Bonjour for Windows```, available from the
+[Apple Website](https://support.apple.com/kb/DL999?locale=en_GB).
+
+1. You will need to log in to the Raspebrry Pi from your laptop or workstation. TODO: Update Windows instructions
+
+    1. From *Linux* or *MacOs*, open a terminal window and enter ```ssh pi@raspberrypi.local```
+    1. If you;re using PuTTY on *Windows*, folow the PuTTY instructions to connect using ssh as user ```pi``` 
+    
+    Whichever method you use to connect, you are likely to see a couple of warnings.
+    
+    One will come from your ssh client, warning you that you have not connected to the Pi
+    before and asking if you are sure you want to connect. Say yes!
+    
+    Once you have *connected* to the Pi you will be asked to log in. You'll see another warning that
+    you are connecting vi ```ssh``` to a Pi that still has the default Password set. That's a security
+    risk which you will address in a minute. For now, log in as user ```pi``` with password
+    ```raspberry```.
+    
+1. Now that you have logged in, you have two changes to make. To make them, you'll need to run a
+program called ```raspi-config```. Since this program can make major changes to your configuration, you will need to run
+it as *root* (the Linux super-user, equivalent to an Adminstrator account on Windows).
+
+    You can do that using the ```sudo``` command.
+    
+    In your ssh session window, type ```sudo raspi-config```. A menu of options should open. 
+    
+    
+    
+
+
