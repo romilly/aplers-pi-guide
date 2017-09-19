@@ -15,7 +15,7 @@ but the process is more complex and is harder to trouble-shoot.
 
 You'll find details below, with links to more detailed information about each step.
 
-The first part of the guide below covers intial configuration of the Pi without mouse,
+The first part of the guide below covers initial configuration of the Pi without mouse,
 screen or keyboard, which is possible but tricky.
 
 The second part covers subsequent configuration, which is what you'll need if you want to use your Pi in a Robot or
@@ -26,8 +26,9 @@ You will need
 target Pi and 
 * a wired network connection for Pi models 1, 2 or 3).
 
-It's also possible to configure a Pi zero or zero W using just a USB connection to your laptop, but this is evien tricker and not recommended until
-you've built up your expertise. If you *really* need to, you'll find details [here](http://blog.gbaman.info/?p=699). 
+It's also possible to configure a Pi zero or zero W using just a USB connection to your laptop, but this is even
+trickier and not recommended until you've built up your expertise.
+If you *really* need to do this, you'll find details [here](http://blog.gbaman.info/?p=699). 
 
 There are three main steps to follow, described below:
 1. You'll need to prepare an SD card for the Pi.
@@ -48,8 +49,7 @@ image and install it on an SD card [here](https://www.raspberrypi.org/downloads/
 1. Re-insert the freshly prepared SD card into your card reader.
 Your operating system should mount the SD card and you should be able to see a partition labelled ```boot```.
 Create a file called ssh in the root of the ```boot``` partition. Its contents do not matter.
-If you're using Windows, make sure the file is called ssh *without any extension* as Windows is prone to add
-(and then hide) txt extensions when you create text files.
+If you're using Windows, make sure the file is called ssh *without any extension*.
 The ssh file tells Raspbian to enable its ```ssh``` sever when the Pi starts up.
 
 1. Now insert the SD card into the target Pi and connect it to the power source.
@@ -80,7 +80,7 @@ as should *Windows 10*.
 1. You will need to log in to the Raspberry Pi from your laptop or workstation. TODO: Update Windows instructions
 
     1. From *Linux* or *MacOs*, open a terminal window and enter ```ssh pi@raspberrypi.local```
-    1. If you;re using PuTTY on *Windows*, folow the PuTTY instructions to connect using ssh as user ```pi``` 
+    1. If you're using PuTTY on *Windows*, follow the PuTTY instructions to connect using ssh as user ```pi``` 
     
     Whichever method you use to connect, you are likely to see a couple of warnings.
     
