@@ -1,24 +1,33 @@
 # Using a Pi without monitor, mouse or keyboard
 
-You can use a Raspberry Pi without having to use extra peripherals.
+Sometimes it isn;t practical to connect your Raspberry Pi to a lot of other hardware. 
+You might not have a spare keyboard or monitor available, or you might be using the Pi
+to control a free-ranging robot. Fortunately you can configure and use a Raspberry Pi without the extra peripherals.
 
-The minimal configuration consists of a Pi model 1, 2 or 3 with a source of power.
+The minimal configuration consists of a Pi zero, model 1, 2 or 3 with a source of power.
 
 The power source is usually an appropriate mains adapter, but any 5v power source will do so long as it can supply
-enough current.
+enough current. Most robots use LiPo batteries or rechargeable NiMH cells to power their motors and their Pi.
 
 The minimal configuration requires that the Pi already has working software installed.
+You *can* configure a headless Pi from scratch over a network using another computer,
+but the process is more complex and is harder to trouble-shoot.
 
-You can configure a headless Pi from scratch over a network using another computer, but the process is more complex
-and is harder to trouble-shoot.
+You'll find details below, with links to more detailed information about each step.
 
-You'll find an overview of the process below, with links to more detailed information about each step.
+The first part of the guide below covers intial configuration of the Pi without mouse,
+screen or keyboard, which is possible but tricky.
+
+The second part covers subsequent configuration, which is what you'll need if you want to use your Pi in a Robot or
+a similar stand-alone project.
  
 You will need
 * a Laptop or workstation (which can be an already-configured Raspberry Pi model 2 or 3) from which configure the
-target Pi *and*
-* a wired network connection for Pi models 1, 2 or 3) *or* 
-* a USB Type A to micro connection for a Pi zero or zero W.
+target Pi and 
+* a wired network connection for Pi models 1, 2 or 3).
+
+It's also possible to configure a Pi zero or zero W using just a USB connection to your laptop, but this is evien tricker and not recommended until
+you've built up your expertise. If you *really* need to, you'll find details [here](http://blog.gbaman.info/?p=699). 
 
 There are three main steps to follow, described below:
 1. You'll need to prepare an SD card for the Pi.
@@ -68,7 +77,7 @@ as should *Windows 10*.
     1. If you're running an *earlier version of Windows*, you can install ```Bonjour for Windows```, available from the
 [Apple Website](https://support.apple.com/kb/DL999?locale=en_GB).
 
-1. You will need to log in to the Raspebrry Pi from your laptop or workstation. TODO: Update Windows instructions
+1. You will need to log in to the Raspberry Pi from your laptop or workstation. TODO: Update Windows instructions
 
     1. From *Linux* or *MacOs*, open a terminal window and enter ```ssh pi@raspberrypi.local```
     1. If you;re using PuTTY on *Windows*, folow the PuTTY instructions to connect using ssh as user ```pi``` 
@@ -89,7 +98,19 @@ it as *root* (the Linux super-user, equivalent to an Adminstrator account on Win
 
     You can do that using the ```sudo``` command.
     
-    In your ssh session window, type ```sudo raspi-config```. A menu of options should open. 
+    In your ssh session window, type ```sudo raspi-config```. A menu of options should open.
+    
+    ![raspi-cpnfig screnshot](images/raspi-config.png)
+    
+    1. Select the first option and change pi's password. This will reduce the risk of some malicious person
+    connecting to your pi using ssh and stealing all your secrets :)
+    
+    1. Chose the 5th option. This will allow you to enable ```VNC```, the interface which will allow you to connect to
+    your Pi's desktop remotely.
+    
+    ![enabling the VNC interface](images/option5.png)
+    
+    1. 
     
     
     
