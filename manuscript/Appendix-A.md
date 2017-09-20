@@ -1,6 +1,6 @@
 # Using a Pi without monitor, mouse or keyboard
 
-Sometimes it isn;t practical to connect your Raspberry Pi to a lot of other hardware. 
+Sometimes it isn't practical to connect your Raspberry Pi to a lot of other hardware. 
 You might not have a spare keyboard or monitor available, or you might be using the Pi
 to control a free-ranging robot. Fortunately you can configure and use a Raspberry Pi without the extra peripherals.
 
@@ -9,7 +9,7 @@ The minimal configuration consists of a Pi zero, model 1, 2 or 3 with a source o
 The power source is usually an appropriate mains adapter, but any 5v power source will do so long as it can supply
 enough current. Most robots use LiPo batteries or rechargeable NiMH cells to power their motors and their Pi.
 
-The minimal configuration requires that the Pi already has working software installed.
+This minimal configuration requires that the Pi already has working software installed.
 You *can* configure a headless Pi from scratch over a network using another computer,
 but the process is more complex and is harder to trouble-shoot.
 
@@ -22,13 +22,14 @@ The second part covers subsequent configuration, which is what you'll need if yo
 a similar stand-alone project.
  
 You will need
-* a Laptop or workstation (which can be an already-configured Raspberry Pi model 2 or 3) from which configure the
+* a Laptop or computer (which can be an already-configured Raspberry Pi model 2 or 3) from which to configure the
 target Pi and 
-* a wired network connection for Pi models 1, 2 or 3).
+* a wired network connection for the Pi. (If you're using a Pi zero/zero w, you'll be aware it has no ethernet port,
+but you can use an inexpensive USB-to-ethernet adapter).
 
 It's also possible to configure a Pi zero or zero W using just a USB connection to your laptop, but this is even
-trickier and not recommended until you've built up your expertise.
-If you *really* need to do this, you'll find details [here](http://blog.gbaman.info/?p=699). 
+trickier and not recommended until you've built up your expertise. If you *really* need to do this, you'll find details
+[here](http://blog.gbaman.info/?p=699). 
 
 There are three main steps to follow, described below:
 1. You'll need to prepare an SD card for the Pi.
@@ -40,6 +41,16 @@ In particular, you can install Dyalog APL on the Pi and use the RIDE to program 
 
 ## Headless configuration details
 
+### Understanding the security risk
+
+The process you'll see below will enable `ssh` access to your Rasbperry Pi for anyone on your network.
+Your Pi will briefly be visible as `raspberrypi.local` and anyone will be able to log in
+using the default userid `pi` and password `raspberry`.
+
+This is probably safe enough while you're just setting up the Pi, but once setup is complete
+you'll need to change the login password for `pi`. The process for doing that is covered in the
+instructions.
+
 ### Preparing and using the SD card
 
 1. It's best to start with an SD card containing the latest Raspbian image. You'll find details about how to download the
@@ -48,9 +59,9 @@ image and install it on an SD card [here](https://www.raspberrypi.org/downloads/
 
 1. Re-insert the freshly prepared SD card into your card reader.
 Your operating system should mount the SD card and you should be able to see a partition labelled ```boot```.
-Create a file called ssh in the root of the ```boot``` partition. Its contents do not matter.
-If you're using Windows, make sure the file is called ssh *without any extension*.
-The ssh file tells Raspbian to enable its ```ssh``` sever when the Pi starts up.
+Create a file called ssh in the root of the `boot` partition. Its contents do not matter.
+If you're using Windows, make sure the file is called `ssh` *without any extension*.
+The ssh file tells Raspbian to enable its `ssh` sever when the Pi starts up.
 
 1. Now insert the SD card into the target Pi and connect it to the power source.
 
@@ -67,15 +78,15 @@ using. *On Linux* you'll need to install the ```openssh-client``` package if it 
     By default the Pi will use DHCP to request a dynamic IP address from your network which you will not know. You can sometimes find out
 the Pi's IP address by connecting to your router, but there is another approach.
     
-    Once the Pi is running it will broadcast itself on the network as raspberrypi.local using Apple's
-```bonjour``` protocol. Resolving that hostname to an IP address
-requires suitable software on your Laptop or Workstation.
+    Once the Pi is running it will broadcast itself on the network as `raspberrypi.local` using Apple's
+`bonjour` protocol. Resolving that hostname to an IP address requires suitable software on your Laptop or Workstation.
 
-    1. On *Linux* ```avahi``` should already be installed and running.
-    1. *MacOS* should also resolve the address without additional software,
-as should *Windows 10*.
-    1. If you're running an *earlier version of Windows*, you can install ```Bonjour for Windows```, available from the
-[Apple Website](https://support.apple.com/kb/DL999?locale=en_GB).
+    1. On *Linux* `avahi` should already be installed and running.
+    1. *MacOS* should also resolve the address without additional software.
+    1. If you're running *Windows*, you can install Bonjour Print Services for Windows`, available from the
+[Apple Website](https://support.apple.com/kb/DL999?locale=en_GB). This will enable `Bonjour` on your Windows computer.
+
+### Configuring the Pi
 
 1. You will need to log in to the Raspberry Pi from your laptop or workstation. TODO: Update Windows instructions
 
@@ -88,30 +99,50 @@ as should *Windows 10*.
     before and asking if you are sure you want to connect. Say yes!
     
     Once you have *connected* to the Pi you will be asked to log in. You'll see another warning that
-    you are connecting vi ```ssh``` to a Pi that still has the default Password set. That's a security
-    risk which you will address in a minute. For now, log in as user ```pi``` with password
-    ```raspberry```.
+    you are connecting vi `ssh` to a Pi that still has the default Password set. That's a security
+    risk which you will address in a minute. For now, log in as user `pi` with password
+    `raspberry`.
     
-1. Now that you have logged in, you have two changes to make. To make them, you'll need to run a
-program called ```raspi-config```. Since this program can make major changes to your configuration, you will need to run
-it as *root* (the Linux super-user, equivalent to an Adminstrator account on Windows).
+1. Now that you have logged in, you can configure the Pi. You'll need to run a
+program called `raspi-config`. Since this program can make major changes to your configuration, you will need to run
+it as *root* (the Linux super-user, equivalent to an Administrator account on Windows).
 
-    You can do that using the ```sudo``` command.
+    You can do that using the `sudo` command.
     
-    In your ssh session window, type ```sudo raspi-config```. A menu of options should open.
+    In your ssh session window, type `sudo raspi-config`. A menu of options should open.
     
     ![raspi-cpnfig screnshot](images/raspi-config.png)
     
     1. Select the first option and change pi's password. This will reduce the risk of some malicious person
     connecting to your pi using ssh and stealing all your secrets :)
     
-    1. Chose the 5th option. This will allow you to enable ```VNC```, the interface which will allow you to connect to
-    your Pi's desktop remotely.
+    You will be asked to enter the new password twice, to avoid typing errors.
+    
+    1. Chose the 5th option. 
     
     ![enabling the VNC interface](images/option5.png)
     
-    1. 
+    1. Select option 3 (VNC).
     
+     ![turn on VNC](images/vnc-enabling.png)
+    
+    1. Set the VNC option to `Yes`
+    
+    ![Say yes to VNC](images/yes-to-vnc.png)
+    
+    Now you'll be able to use VNC on another computer to connect to the PI.
+    
+1. Configure WiFi (*Optional*).
+
+    If you're going to use the Pi without a wired ethernet connection to your network, you'll need to use WiFi.
+
+    The Pi 3 and zero w have built-in WiFi; other models will need a compatible WiFi dongle.
+
+    You can find out how to configure WiFi from the command line from this
+[Raspberry Pi Website article](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+    
+
+## Connecting Via VNC
     
     
 
