@@ -111,7 +111,7 @@ it as *root* (the Linux super-user, equivalent to an Administrator account on Wi
     
     In your ssh session window, type `sudo raspi-config`. A menu of options should open.
     
-    ![raspi-cpnfig screnshot](images/raspi-config.png)
+    ![raspi-config screnshot](images/raspi-config.png)
     
     1. Select the first option and change pi's password. This will reduce the risk of some malicious person
     connecting to your pi using ssh and stealing all your secrets :)
