@@ -118,6 +118,8 @@ it as *root* (the Linux super-user, equivalent to an Administrator account on Wi
     
     You will be asked to enter the new password twice, to avoid typing errors.
     
+    Once you've changed the password you will be taken back to the top level menu.
+    
     1. Chose the 5th option. 
     
     ![enabling the VNC interface](images/option5.png)
@@ -143,7 +145,43 @@ it as *root* (the Linux super-user, equivalent to an Administrator account on Wi
     
 
 ## Connecting Via VNC
-    
-    
+
+You'll need to install a (free) VNC client (called VNCViewer) on the workstation or computer that you want to connect
+to the Pi.
+
+You can download the Viewer from the [RealVNC website](https://www.realvnc.com/en/connect/download/viewer/).
+
+Don't worry about the reminder you'll see to make sure you have VNC Connect installed on your target computer.
+It's part of the Raspbian distribution, and you enabled it in the previous step.
+
+You *probably* want to sign up for a VNC account. It's free, and means that you will be able
+to access your Pi securely from anywhere on the Internet, but you don't have to if the Pi is
+on the same network as your computer.
+
+Follow the website's installation instructions for your OS and start VNC Viewer.
+
+You'll see a screen like this (if you didn't create a VNC account it will look a little different):
+
+ 
+![VNC connect](images/vnc-chose-host.png)
+ 
+In the entry field at the rop of the screen, enter the address of the Pi you want to
+connect to. Unless you have changed the hostname of the Pi, that will still be `raspberrypi.local`. 
+
+Press enter. You'll see a logon screen like this.
+
+![VNC logon](images/vnc-logon-1.png)
+
+Change the username to `pi` and enter the Pi's logon password.
+
+![VNC logon step 2](images/vnc-logon-2.png)
+
+When you click on OK you should see the Pi's desktop displayed within a window on
+your machine.
+
+![Pi desktop](images/pi-desktop.png)
+
+From now on you can control your Pi from your laptop or computer, just as if your keyboard, mouse and
+monitor were connected to the Pi itself. 
 
 
