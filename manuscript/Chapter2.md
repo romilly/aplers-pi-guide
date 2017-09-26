@@ -10,7 +10,26 @@ inexpensive setup. [Morten Kromberg was!](http://www.dyalog.com/blog/2017/01/mor
 The Pi version is a full implementation of Dyalog APL.
 If you're a current Dyalog user you should find the environment very familiar.
 If, like me, you're coming back to APL after a period of absence, you might want to take a look at some of the
-resources described [here](http://www.dyalog.com/dyalog/raspberry-pi.htm).
+resources described [here](http://www.dyalog.com/dyalog/raspberry-pi.htm). You'l also find a quick guide to getting
+started with RIDE below.
+
+## Three ways to RIDE
+
+You'll enjoy using Dyalog APL with the RIDE. It's an intuitive development with a lot of powerful features, and as of
+version 4.0 it runs on Raspberry Pi models 2 and 3. You can also run it on another computer to connect to an APL interpreter
+that's running on the Pi.
+
+There are three ways you can use RIDE with APL on the Pi:
+1. If you have a Pi model 2 or 3 with a mouse, keyboard and monitor, you can use the RIDE on the Pi.
+1. If you have a Pi model 2 or 3 with VNC enabled, you can use the VNC client on a remote computer to run a RIDE session
+on the Pi, even if the Pi hasn't got a keyboard, mouse or monitor. You can find ddetauls of VNC in Appendix A; once
+VNC access is set up, you'll use the RIDE in the same ways as option 1 above.
+1. If you have *any* model of Pi with network access you can use the RIDE on a networked computer to run APL on the Pi.
+That's a great way to connect to and control a Pi robot.
+
+### Running the RIDE on the PI
+
+### Running the RIDE remotely
 
 ##Physical computing
 
