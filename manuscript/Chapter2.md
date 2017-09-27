@@ -104,6 +104,9 @@ If you defined the function `average` as shown above, you can type
 and an editor panel will open in the RIDE.
 
 ![RIDE Editor](images/editor.png) 
+
+You can also use the RIDE editor to create and edit traditional functions, edit data and manage
+the debugger. You'll find more details in the RIDE USer Guide.
   
 
 ##Physical computing
