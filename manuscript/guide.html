@@ -1,0 +1,252 @@
+<h1 id="the-aplers-guide-to-the-raspberry-pi">The APLer's Guide to the Raspberry Pi</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Raspberry Pi is cheap to buy, fun to explore, and a very practical platform for APL. If you know APL, this document will help you to get going with the Pi as quickly as possible.</p>
+<h3 id="who-should-read-this-guide">Who should read this guide</h3>
+<p>This guide has been sponsored by Dyalog Limited as a resource for current or veteran APLers who want to experiment with Dyalog's free APL for the Raspberry Pi.</p>
+<p>The APL is freely available on the Pi for non-commercial use. Commercial licensing is also available: contact sales@dyalog.com</p>
+<h3 id="getting-started-with-the-pi">Getting started with the Pi</h3>
+<p>Many APLers are familiar with Microsoft Windows running on Intel platforms and with Mac OS. Some are familiar with running Linux on desktop machines.</p>
+<p>The Raspberry Pi is different, and the differences can be a bit daunting.</p>
+<p>This guide aims to de-mystify the process of getting started with the Raspberry Pi as an APL development platform.</p>
+<h3 id="whats-covered">What's covered</h3>
+<p>The guide covers what to buy, where to get it, how to set it up and how to install Dyalog APL.</p>
+<h3 id="whats-not-covered">What's not covered</h3>
+<p>The guide assumes you are familiar with APL. It does not cover how to use Dyalog's wonderful RIDE (Remote IDE), as Dyalog already provide documentation on-line.</p>
+<p>It does not cover Linux, though there is a link to some relevant learning resources at the end of the document.</p>
+<p>Nor does it cover Physical Computing with the Pi (controlling lights and motors, reading buttons and potentiometers etc). I'm planning a separate guide for that.</p>
+<h2 id="the-5-minute-summary">The 5 minute summary</h2>
+<p>This section contains the bare minimum of advice you need to get started quickly, but offers no explanation or discussion of alternative approaches.</p>
+<p>If you're happy with that just do what I suggest :)</p>
+<p>Most APLers don't just blindly follow the herd - that's why they are APLers! If you want to know the assumptions behind my advice and the alternatives available, read the whole document.</p>
+<p>If you just want to get going, here's the 5-minute version:</p>
+<ol style="list-style-type: decimal">
+<li>Buy a Raspberry Pi 3 Starter Kit and make sure you have the other hardware you'll need</li>
+<li>Connect the contents and boot it up</li>
+<li>Install Dyalog APL</li>
+</ol>
+<p>Details of each are given below.</p>
+<h3 id="buy-a-raspberry-pi-3-starter-kit">Buy a Raspberry Pi 3 starter kit</h3>
+<p>Raspberry Pi 3 starter kits are widely available in the UK, Europe and the USA.</p>
+<p>Look for one which has the following components:</p>
+<ul>
+<li>Raspberry Pi model 3</li>
+<li>5v 2.5A Power supply which you can plug into your mains supply</li>
+<li>8Gb SD card with NOOBS or Raspbian Pixel pre-loaded</li>
+</ul>
+<p>You'll also need a USB mouse, a USB keyboard (the Dyalog APL keyboard works best but any keyboard will do), a monitor or TV with HDMI support and an HDMI cable to connect it to the Pi.</p>
+<p>You may also want to get a case. Some starter kits will include one.</p>
+<p>You'll need WiFi or a wired connection in order to install and update the Pi's software.</p>
+<p>The Raspberry Pi 3 has built-in WiFi which you can configure once the Pi has booted up. (If you're using an earlier model you can use wired ethernet or get a USB WEiFi dongle). If you decide to use a wired ethernet connection you will also need an ethernet cable.</p>
+<p>Some starter kits include a keyboard and mouse; some don't. Check carefully and decide which one to get.</p>
+<p>The supplier I normally buy from is a UK company called <a href="https://shop.pimoroni.com/">Pimoroni</a>. If you're based outside the UK Pimoroni ship overseas but a local supplier may be faster and cheaper.</p>
+<p>Pimoroni sell a <a href="https://shop.pimoroni.com/products/raspberry-pi-3-starter-kit">starter kit for £85</a> (including mouse and keyboard) and an <a href="https://shop.pimoroni.com/products/raspberry-pi-3-essentials-kit">essentials kit</a> (without mouse or keyboard) for £55.</p>
+<h3 id="connect-the-hardware">Connect the hardware</h3>
+<p>There's a great <a href="https://www.raspberrypi.org/learning/hardware-guide/">guide to setting up your Pi</a> on the Raspberry Pi website. I won't try to reproduce it; just follow their super-clear instructions.</p>
+<p>When you're done, come back here.</p>
+<h3 id="install-dyalog-following-these-instructions">Install Dyalog following these instructions</h3>
+<p>As mentioned above, you can run Dyalog APL on all models of the Raspberry Pi, and you can use Dyalog's Remote IDE (the RIDE) to connect, program and debug APL from another computer.</p>
+<p>If you've got a Raspberry Pi 2.0 or 3.0 you can also use the RIDE on your Pi.</p>
+<p><a href="http://packages.dyalog.com/">Dyalog/RIDE installation on the Pi is covered here</a>.</p>
+<p>The documentation for RIDE 4.0 is available <a href="http://docs.dyalog.com/16.0/RIDE%20User%20Guide.pdf">here</a>.</p>
+<p>Now skip on to the section 'What Next?' at the end of this document.</p>
+<h1 id="the-alternatives">The alternatives</h1>
+<h2 id="alternative-models-of-the-pi">Alternative models of the Pi</h2>
+<p>You don't <em>have</em> to get a Raspberry Pi model 3.</p>
+<p>You can use a Raspberry Pi zero, zero W, Model 1 or 2 but they are not much cheaper and are much less powerful.</p>
+<p>The Raspberry Pi model 3 has 4 cores and 1 Gb of RAM and APL can use them all!</p>
+<p>You might consider earlier versions but remember that you won't be able to run the RIDE on a zero, zero W or Pi model 1. Apart from the RIDE, setup and installation are the same as for the Pi 3.</p>
+<h2 id="headless-running">Headless running</h2>
+<p>It's <em>possible</em> to run any model of Raspberry Pi without a keyboard, mouse or monitor. This is sometimes called a <em>headless</em> configuration.</p>
+<p>You can still program your Pi so long as you have a wired or wireless network connection.</p>
+<p>You can even configure a headless Pi from scratch so long as you have a wired connection and are willing to go through a more complex set-up process. There's more information on configuring and using a headless Pi in Appendix A.</p>
+<h1 id="what-next">What next?</h1>
+<p>You can now start exploring Dyalog APL on the Pi.</p>
+<p>If you're running a Pi model 3 you may be pleasantly surprised at the responsiveness of this very inexpensive setup. <a href="http://www.dyalog.com/blog/2017/01/morse-code-revisited-using-the-bbc-microbit/">Morten Kromberg was!</a></p>
+<p>The Pi version is a full implementation of Dyalog APL. If you're a current Dyalog user you should find the environment very familiar. If, like me, you're coming back to APL after a period of absence, you might want to take a look at some of the resources described <a href="http://www.dyalog.com/dyalog/raspberry-pi.htm">here</a>. You'l also find a quick guide to getting started with RIDE below.</p>
+<h2 id="three-ways-to-ride">Three ways to RIDE</h2>
+<p>You'll enjoy using Dyalog APL with the RIDE. It's an intuitive development environment with a lot of powerful features, and version 4.0 runs on Raspberry Pi models 2 and 3. You can also run the RIDE on another computer to connect to an APL interpreter that's running on the Pi.</p>
+<p>There are three ways you can use RIDE with APL on the Pi: 1. If you have a Pi model 2 or 3 with a mouse, keyboard and monitor, you can use the RIDE on the Pi. 1. If you have a Pi model 2 or 3 with VNC enabled, you can use the VNC client on a remote computer to run a RIDE session on the Pi, even if the Pi hasn't got a keyboard, mouse or monitor. You can find details of VNC in Appendix A; once VNC access is set up, you'll use the RIDE in the same ways as option 1 above. 1. If you have <em>any</em> model of Pi with network access you can use the RIDE on a networked computer to run Dyalog APL on the Pi. That's a great way to connect to and control a Pi robot.</p>
+<h3 id="running-the-ride-on-the-pi">Running the RIDE on the PI</h3>
+<p>If you've installed Dyalog APL version 16 and RIDE 4.0 following <a href="http://packages.dyalog.com/">this process</a>, you should see a couple of new Dyalog Icons when you click on the Pi's Programming Menu.</p>
+<div class="figure">
+<img src="images/menu.png" alt="Programming Menu" />
+<p class="caption">Programming Menu</p>
+</div>
+<p>If you click on the Dyalog Icon labelled <em>Dyalog APL</em> - <strong>not</strong> the one with (TTY) after it - you should see a RIDE session open on the Pi. It should look like this:</p>
+<div class="figure">
+<img src="images/screen.png" alt="Local RIDE session" />
+<p class="caption">Local RIDE session</p>
+</div>
+<p>As you can see, the RIDE has an area at the top which displays the APL character set, so you can type APl characters without worrying about the PAL keyboard layout. On the Pi, though, APL keyboard is support is installed automatically, so you can use the Windows key to type all the supported APL characters.</p>
+<h3 id="running-the-ride-remotely">Running the RIDE remotely</h3>
+<p>If you've installed Dyalog version 16 on a Pi that's connected to your network via ethernet or WiFi you can connect remotely using RIDE on a Windows, Mac OS or Linux computer. You'll need RIDE 4.0 on the remote computer, and you may also want to enable the APL keyboard.</p>
+<p>If the remote machine has been used for APL development it probably has RIDE 4.0 installed and the APL keyboard is probably already enabled.</p>
+<p>If not, you can find installation instructions in the <a href="http://docs.dyalog.com/16.0/RIDE%20User%20Guide.pdf">RIDE User Guide</a></p>
+<h3 id="developing-with-the-ride">Developing with the RIDE</h3>
+<p>The RIDE is a very capable IDE, and its features are covered in detail in the user guide.</p>
+<p>Below you'll find a very brief summary of the features you need to start developing in Dyalog APL.</p>
+<h4 id="immediate-execution-mode">Immediate Execution Mode</h4>
+<p>If you type in an APL expression in the RIDE window and press <code>Enter</code> the code will be executed and the result (if there is one) will be displayed.</p>
+<h4 id="definition-of-dfns">definition of dfns</h4>
+<p>You can create, use and save direct functions (dfns) in immediate execution mode.</p>
+<p>To calculate an average using an anonymous dfn with the traditional* APL algorithm, you can enter the following:</p>
+<pre><code>{(+/⍵)÷⍴⍵} 1 3 5 7 8</code></pre>
+<p>and you;ll see the result displayed</p>
+<p><code>4.8</code></p>
+<p>You can save the dfn by assigning it:</p>
+<pre><code>  average ← {(+/⍵)÷⍴⍵}
+  average 1 3 5 7 8</code></pre>
+<p><code>4.8</code></p>
+<p>* These days there's a better version which works with higher-dimensional arrays and uses a <em>train</em>:</p>
+<pre><code>  mean ← +⌿÷≢
+  mean 1 3 5 7 8</code></pre>
+<p><code>4.8</code></p>
+<h4 id="editing-functions">editing functions</h4>
+<p>You can use the RIDE editor by invoking the )ed command, or by double-clicking a name in the RIDE session.</p>
+<p>If you defined the function <code>average</code> as shown above, you can type</p>
+<pre><code>)ed average</code></pre>
+<p>and an editor panel will open in the RIDE.</p>
+<div class="figure">
+<img src="images/editor.png" alt="RIDE Editor" />
+<p class="caption">RIDE Editor</p>
+</div>
+<p>You can also use the RIDE editor to create and edit traditional functions, edit data and manage the debugger. You'll find more details in the RIDE USer Guide.</p>
+<h2 id="physical-computing">Physical computing</h2>
+<p>There's not enough space in this guide to cover the ways in which you can do Physical Computing from APL on the Pi (driving LEDs and motors, and sensing the real world). You can read some details on <a href="http://www.dyalog.com/blog/">Morten Kromberg's blog</a>, and I hope to publish a guide to the topic if there's enough demand.</p>
+<h2 id="other-resources">Other resources</h2>
+<p>If you're new to Linux you may also want to get up to speed with Raspbian, the version of Linux that you'll be using with the Pi. There's a good book: Raspberry Pi User Guide by Eben Upton and Gareth Halfacree which you can find on Amazon and elsewhere. Make sure you get the Second Edition!</p>
+<p>There's a helpful forum on the <a href="https://www.raspberrypi.org/">Raspberry Pi website</a>, along with a lot of other resources.</p>
+<p>There's a monthly magazine called <a href="https://www.raspberrypi.org/magpi/">the MagPi</a>. You can get it <a href="https://www.raspberrypi.org/magpi/issues/">free in pdf format</a>, but if you subscribe to the printed version you'll get a free Raspberry Pi zero!</p>
+<h3 id="use-the-slack-channel-and-support-forum">Use the slack channel and support forum</h3>
+<p>There's a slack channel for discussing APL. You need an invitation to join. You can ask for an invitation, or ask questions about Dyalog, on the <a href="http://www.dyalog.com/forum/">Dyalog Support Forum</a>. You'll need to register before you can post.</p>
+<h3 id="join-the-email-list">Join the email list</h3>
+<p>Dyalog have a mailing list which they will use to keep Pi users informed of new resources. You can <a href="http://www.dyalog.com/dyalog/raspberry-pi.htm#subscribe">join it here</a>.</p>
+<h2 id="have-fun">Have fun!</h2>
+<p>I hope you'll have as much fun with the Pi as I do!</p>
+
+<h1 id="appendix-a">Appendix A</h1>
+<h2 id="using-a-pi-without-monitor-mouse-or-keyboard">Using a Pi without monitor, mouse or keyboard</h2>
+<p>Sometimes it isn't practical to connect your Raspberry Pi to a lot of other hardware. You might not have a spare keyboard or monitor available, or you might be using the Pi to control a free-ranging robot. Fortunately you can configure and use a Raspberry Pi without the extra peripherals.</p>
+<p>The minimal configuration consists of a Pi zero, model 1, 2 or 3 with a source of power.</p>
+<p>The power source is usually an appropriate mains adapter, but any 5v power source will do so long as it can supply enough current. Most robots use LiPo batteries or rechargeable NiMH cells to power their motors and their Pi.</p>
+<p>This minimal configuration requires that the Pi already has working software installed. You <em>can</em> configure a headless Pi from scratch over a network using another computer, but the process is more complex and is harder to trouble-shoot.</p>
+<p>You'll find details below, with links to more detailed information about each step.</p>
+<p>The first part of the guide below covers initial configuration of the Pi without mouse, screen or keyboard, which is possible but tricky.</p>
+<p>The second part covers subsequent configuration, which is what you'll need if you want to use your Pi in a Robot or a similar stand-alone project.</p>
+<p>You will need * a Laptop or computer (which can be an already-configured Raspberry Pi model 2 or 3) from which to configure the target Pi and * a wired network connection for the Pi. (If you're using a Pi zero/zero w, you'll be aware it has no ethernet port, but you can use an inexpensive USB-to-ethernet adapter).</p>
+<p>It's also possible to configure a Pi zero or zero W using just a USB connection to your laptop, but this is even trickier and not recommended until you've built up your expertise. If you <em>really</em> need to do this, you'll find details <a href="http://blog.gbaman.info/?p=699">here</a>.</p>
+<p>There are three main steps to follow, described below: 1. You'll need to prepare an SD card for the Pi. 1. You'll need to use a protocol called <code>ssh</code> to connect to the Pi and prepare it for step 3. 1. You'll use a protocol called <code>VNC</code> to access the Pi's desktop on your laptop or workstation.</p>
+<p>After step 3 you can use your laptop or workstation for carry out further configuration of the Pi. In particular, you can install Dyalog APL on the Pi and use the RIDE to program and debug.</p>
+<h2 id="headless-configuration-details">Headless configuration details</h2>
+<h3 id="understanding-the-security-risk">Understanding the security risk</h3>
+<p>The process you'll see below will enable <code>ssh</code> access to your Rasbperry Pi for anyone on your network. Your Pi will briefly be visible as <code>raspberrypi.local</code> and anyone will be able to log in using the default userid <code>pi</code> and password <code>raspberry</code>.</p>
+<p>This is probably safe enough while you're just setting up the Pi, but once setup is complete you'll need to change the login password for <code>pi</code>. The process for doing that is covered in the instructions.</p>
+<h3 id="preparing-and-using-the-sd-card">Preparing and using the SD card</h3>
+<ol style="list-style-type: decimal">
+<li><p>It's best to start with an SD card containing the latest Raspbian image. You'll find details about how to download the image and install it on an SD card <a href="https://www.raspberrypi.org/downloads/raspbian/">here</a>. <strong>Do not</strong> use it to boot the Pi before completing step 2 below!</p></li>
+<li><p>Re-insert the freshly prepared SD card into your card reader. Your operating system should mount the SD card and you should be able to see a partition labelled <code>boot</code>. Create a file called ssh in the root of the <code>boot</code> partition. Its contents do not matter. If you're using Windows, make sure the file is called <code>ssh</code> <em>without any extension</em>. The ssh file tells Raspbian to enable its <code>ssh</code> sever when the Pi starts up.</p></li>
+<li><p>Now insert the SD card into the target Pi and connect it to the power source.</p></li>
+</ol>
+<h3 id="connecting-to-the-pi-via-ssh">Connecting to the Pi via <code>ssh</code></h3>
+<ol style="list-style-type: decimal">
+<li><p>You will need an <code>ssh</code> client on your laptop or workstation. Installation depends on the Operation System you're using. <em>On Linux</em> you'll need to install the <code>openssh-client</code> package if it is not already installed. <em>MacOS</em> should have <code>ssh</code> support built-in to <code>Terminal</code>. <em>Windows</em> users will need to install a suitable client: PuTTY (free software, widely used) is a good choice. You'll find installation instructions for PuTTY <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">here</a>.</p></li>
+<li><p>You will need to enable your laptop or workstation to find the target Pi on the network.</p>
+<p>By default the Pi will use DHCP to request a dynamic IP address from your network which you will not know. You can sometimes find out the Pi's IP address by connecting to your router, but there is another approach.</p>
+<p>Once the Pi is running it will broadcast itself on the network as <code>raspberrypi.local</code> using Apple's <code>bonjour</code> protocol. Resolving that hostname to an IP address requires suitable software on your Laptop or Workstation.</p>
+<ol style="list-style-type: decimal">
+<li>On <em>Linux</em> <code>avahi</code> should already be installed and running.</li>
+<li><em>MacOS</em> should also resolve the address without additional software.</li>
+<li>If you're running <em>Windows</em>, you can install Bonjour Print Services for Windows<code>, available from the [Apple Website](https://support.apple.com/kb/DL999?locale=en_GB). This will enable</code>Bonjour` on your Windows computer.</li>
+</ol></li>
+</ol>
+<h3 id="configuring-the-pi">Configuring the Pi</h3>
+<ol style="list-style-type: decimal">
+<li><p>You will need to log in to the Raspberry Pi from your laptop or workstation. TODO: Update Windows instructions</p>
+<ol style="list-style-type: decimal">
+<li>From <em>Linux</em> or <em>MacOs</em>, open a terminal window and enter <code>ssh pi@raspberrypi.local</code></li>
+<li>If you're using PuTTY on <em>Windows</em>, follow the PuTTY instructions to connect using ssh as user <code>pi</code></li>
+</ol>
+<p>Whichever method you use to connect, you are likely to see a couple of warnings.</p>
+<p>One will come from your ssh client, warning you that you have not connected to the Pi before and asking if you are sure you want to connect. Say yes!</p>
+<p>Once you have <em>connected</em> to the Pi you will be asked to log in. You'll see another warning that you are connecting vi <code>ssh</code> to a Pi that still has the default Password set. That's a security risk which you will address in a minute. For now, log in as user <code>pi</code> with password <code>raspberry</code>.</p></li>
+<li><p>Now that you have logged in, you can configure the Pi. You'll need to run a program called <code>raspi-config</code>. Since this program can make major changes to your configuration, you will need to run it as <em>root</em> (the Linux super-user, equivalent to an Administrator account on Windows).</p>
+<p>You can do that using the <code>sudo</code> command.</p>
+<p>In your ssh session window, type <code>sudo raspi-config</code>. A menu of options should open.</p>
+<div class="figure">
+<img src="images/raspi-config.png" alt="raspi-config screnshot" />
+<p class="caption">raspi-config screnshot</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>Select the first option and change pi's password. This will reduce the risk of some malicious person connecting to your pi using ssh and stealing all your secrets :)</li>
+</ol>
+<p>You will be asked to enter the new password twice, to avoid typing errors.</p>
+<p>Once you've changed the password you will be taken back to the top level menu.</p>
+<ol style="list-style-type: decimal">
+<li>Chose the 5th option.</li>
+</ol>
+<div class="figure">
+<img src="images/option5.png" alt="enabling the VNC interface" />
+<p class="caption">enabling the VNC interface</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>Select option 3 (VNC).</li>
+</ol>
+<div class="figure">
+<img src="images/vnc-enabling.png" alt="turn on VNC" />
+<p class="caption">turn on VNC</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>Set the VNC option to <code>Yes</code></li>
+</ol>
+<div class="figure">
+<img src="images/yes-to-vnc.png" alt="Say yes to VNC" />
+<p class="caption">Say yes to VNC</p>
+</div>
+<p>Now you'll be able to use VNC on another computer to connect to the PI.</p></li>
+<li><p>Configure WiFi (<em>Optional</em>).</p>
+<p>If you're going to use the Pi without a wired ethernet connection to your network, you'll need to use WiFi.</p>
+<p>The Pi 3 and zero w have built-in WiFi; other models will need a compatible WiFi dongle.</p>
+<p>You can find out how to configure WiFi from the command line from this <a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">Raspberry Pi Website article</a>.</p></li>
+</ol>
+<h2 id="connecting-via-vnc">Connecting Via VNC</h2>
+<p>You'll need to install a (free) VNC client (called VNCViewer) on the workstation or computer that you want to connect to the Pi.</p>
+<p>You can download the Viewer from the <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC website</a>.</p>
+<p>Don't worry about the reminder you'll see to make sure you have VNC Connect installed on your target computer. It's part of the Raspbian distribution, and you enabled it in the previous step.</p>
+<p>You <em>probably</em> want to sign up for a VNC account. It's free, and means that you will be able to access your Pi securely from anywhere on the Internet, but you don't have to if the Pi is on the same network as your computer.</p>
+<p>Follow the website's installation instructions for your OS and start VNC Viewer.</p>
+<p>You'll see a screen like this (if you didn't create a VNC account it will look a little different):</p>
+<div class="figure">
+<img src="images/vnc-chose-host.png" alt="VNC connect" />
+<p class="caption">VNC connect</p>
+</div>
+<p>In the entry field at the rop of the screen, enter the address of the Pi you want to connect to. Unless you have changed the hostname of the Pi, that will still be <code>raspberrypi.local</code>.</p>
+<p>Press enter. You'll see a logon screen like this.</p>
+<div class="figure">
+<img src="images/vnc-logon-1.png" alt="VNC logon" />
+<p class="caption">VNC logon</p>
+</div>
+<p>Change the username to <code>pi</code> and enter the Pi's logon password.</p>
+<div class="figure">
+<img src="images/vnc-logon-2.png" alt="VNC logon step 2" />
+<p class="caption">VNC logon step 2</p>
+</div>
+<p>When you click on OK you should see the Pi's desktop displayed within a window on your machine.</p>
+<div class="figure">
+<img src="images/pi-desktop.png" alt="Pi desktop" />
+<p class="caption">Pi desktop</p>
+</div>
+<p>From now on you can control your Pi from your laptop or computer, just as if your keyboard, mouse and monitor were connected to the Pi itself.</p>
+<h1 id="licence">Licence</h1>
+<p>Unless otherwise specified, everything in this repository is covered by the the CC BY/SA 4.0 licence:</p>
+<p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a></p>
+<h1 id="about-the-author">About the author</h1>
+<p>Romilly Cocking has been using APL to solve problems since 1974.</p>
+<p>He founded the British APL Association (then called the UK APL user group) in 1976.</p>
+<p>For two decades he helped to run Cocking and Drury, a software house that specialised in APL.</p>
+<p>Romilly is currently engaged in Robotics and AI research using APL as the implementation language.</p>
+<p>You can contact him at romilly.cocking@gmail.com or follow him on twitter as <span class="citation">[@rareblog]</span>(http://twitter.com/rareblog)</p>
+<p>You can read his blog <a href="http://blog.rareschool.com/">here</a></p>
+<div class="figure">
+<img src="images/rom.jpg" alt="Romilly Cocking" />
+<p class="caption">Romilly Cocking</p>
+</div>
